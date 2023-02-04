@@ -1,0 +1,25 @@
+// Note:
+// useRef(initialValue) is a built-in React hook that accepts one argument as the
+// initial value and returns a reference (aka ref). A reference is an object having a
+// special property "current"
+
+// const initialValue = 0
+// const reference = useRef(initialValue)
+// Access reference value:
+// const value = reference.current
+// Update reference value:
+// cont newValue = 100
+// reference.current = newValue
+
+// There are 2 rules to remember about references:
+// 1. The value of the reference is persisted (remains unchanged) between component re-renderings;
+// 2. Updating a reference doesn't trigger a component re-rendering.
+
+// Accessing DOM elements
+// Another useful application of the useRef() hook is to access DOM elements directly.
+// This is performed in 3 steps:
+// 1. Define the reference to access the element:
+//    const elementRef = useRef()
+// 2. Assign the reserence to ref attribute of the element:
+//    <div ref={elementRef}></div>
+// 3. After mounting, elementRef.current points to the DOM element.
